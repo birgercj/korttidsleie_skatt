@@ -14,7 +14,8 @@ st.write(
 # Brukeren legger inn inntekt
 inntekt = st.number_input(
     "Hvor mye har du tjent?", 
-    min_value=0.0, 
+    min_value=0.0,
+    step=1000.0, 
     format="%.2f", 
     help="Oppgi beløpet i norske kroner (NOK)"
 )
